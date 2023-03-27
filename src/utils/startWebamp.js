@@ -5,10 +5,10 @@ const startWebamp = () => {
         const webamp = new Webamp({
             initialTracks: [{
                 metaData: {
-                    artist: "Rick Astley",
-                    title: "Never Gonna Give You Up"
+                    artist: "Sony",
+                    title: "Jungle Mix"
                 },
-                url: `${process.env.PUBLIC_URL}/never-gonna-give-you-up.mp3`,
+                url: `${process.env.PUBLIC_URL}/jungle.mp3`,
                 duration: 213
             }]
         });
