@@ -1,5 +1,6 @@
-# Portfolio
-My portfolio website in old-school Windows95 style [insafkhamzin.com](https://insafkhamzin.com/)
+# Jackpot Game
+* First launch of our new game
+
 
 ## Credits
 * Website was built with [React](https://github.com/facebook/react)
