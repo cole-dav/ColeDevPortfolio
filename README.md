@@ -8,4 +8,4 @@
 * Winamp player in web [Webamp](https://github.com/captbaritone/webamp)
 
 ## Preview
-![Screenshot](https://user-images.githubusercontent.com/27154217/83787409-bd86fb80-a661-11ea-9a21-93a732967b07.png)
+![Screenshot](https://github.com/cole-dav/JackpotAlpha/blob/main/public/Screenshot%202023-03-27%20at%204.40.13%20PM.png)
