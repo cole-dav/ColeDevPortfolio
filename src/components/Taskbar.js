@@ -16,10 +16,10 @@ function Taskbar() {
         <TaskBar
             list={
                 <List>
-                    <List.Item className="pointer" icon="brush">
+                    {/* <List.Item className="pointer" icon="brush">
                         <Link href={react95Repo} target="_blank">Built with React95</Link>
                     </List.Item>
-                    <List.Divider />
+                    <List.Divider /> */}
                     <List.Item className="pointer" icon="folder_file">
                         <Link href={projectRepo} target="_blank">Repo</Link>
                     </List.Item>
