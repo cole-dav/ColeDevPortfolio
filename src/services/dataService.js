@@ -175,19 +175,11 @@ export default class DataService {
         content: {
           hard: [
             {
-              name: 'C# .NET',
+              name: 'Gambling',
               progress: 100,
             },
             {
-              name: 'SQL Server',
-              progress: 100,
-            },
-            {
-              name: 'React/Redux',
-              progress: 90,
-            },
-            {
-              name: 'Node.js',
+              name: 'Ball',
               progress: 90,
             },
             {
