@@ -9,7 +9,15 @@ const startWebamp = () => {
                     title: "Jungle Mix"
                 },
                 url: `${process.env.PUBLIC_URL}/jungle.mp3`,
-                duration: 213
+                duration: 213,
+            },
+            {
+                metaData: {
+                    artist: "BabyTron",
+                    title: "Melrose"
+                },
+                url: `${process.env.PUBLIC_URL}/Babytron-Melrose.mp3`,
+                duration: 134,
             }]
         });
         webamp.onClose(() => {
