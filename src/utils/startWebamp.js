@@ -18,6 +18,30 @@ const startWebamp = () => {
                 },
                 url: `${process.env.PUBLIC_URL}/Babytron-Melrose.mp3`,
                 duration: 134,
+            },
+            {
+                metaData: {
+                    artist: "Drake",
+                    title: "The Winner"
+                },
+                url: `${process.env.PUBLIC_URL}/Drake-Winner.mp3`,
+                duration: 134,
+            },
+            {
+                metaData: {
+                    artist: "Future",
+                    title: "Comin Out Strong"
+                },
+                url: `${process.env.PUBLIC_URL}/Future-Comin-Out-Strong.mp3`,
+                duration: 134,
+            },
+            {
+                metaData: {
+                    artist: "Lil Yachty",
+                    title: "drive ME crazy!"
+                },
+                url: `${process.env.PUBLIC_URL}/Lil-Yachty-drive-ME-crazy!.mp3`,
+                duration: 134,
             }]
         });
         webamp.onClose(() => {
