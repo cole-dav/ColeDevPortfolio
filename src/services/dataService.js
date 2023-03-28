@@ -80,8 +80,8 @@ export default class DataService {
                 'Jackpot is a sports consumption revolution ',
               techStack: 'React, Firebase, Flow',
               myRole: 'Founder',
-              // url: 'https://t.me/crypto_info1_bot',
-              // repo: 'https://github.com/InsafKhamzin/crypto-info-bot',
+              url: 'https://pitch.com/public/ccc225dd-fe63-43b5-aa44-ddd1121add0b',
+              // repo: 'https://github.com/cole-dav',
             },
             
           ],
