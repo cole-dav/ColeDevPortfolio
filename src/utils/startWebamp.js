@@ -9,7 +9,7 @@ const startWebamp = () => {
                     title: "Jungle Mix"
                 },
                 url: `${process.env.PUBLIC_URL}/jungle.mp3`,
-                duration: 213,
+                duration: 3730,
             },
             {
                 metaData: {
@@ -25,7 +25,7 @@ const startWebamp = () => {
                     title: "The Winner"
                 },
                 url: `${process.env.PUBLIC_URL}/Drake-Winner.mp3`,
-                duration: 134,
+                duration: 277,
             },
             {
                 metaData: {
@@ -33,7 +33,7 @@ const startWebamp = () => {
                     title: "Comin Out Strong"
                 },
                 url: `${process.env.PUBLIC_URL}/Future-Comin-Out-Strong.mp3`,
-                duration: 134,
+                duration: 250,
             },
             {
                 metaData: {
@@ -41,7 +41,7 @@ const startWebamp = () => {
                     title: "drive ME crazy!"
                 },
                 url: `${process.env.PUBLIC_URL}/Lil-Yachty-drive-ME-crazy!.mp3`,
-                duration: 134,
+                duration: 247,
             }]
         });
         webamp.onClose(() => {
