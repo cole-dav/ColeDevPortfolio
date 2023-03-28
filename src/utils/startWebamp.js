@@ -9,7 +9,7 @@ const startWebamp = () => {
                     title: "Jungle Mix"
                 },
                 url: `${process.env.PUBLIC_URL}/jungle.mp3`,
-                duration: 3730,
+                duration: 3729,
             },
             {
                 metaData: {
@@ -17,7 +17,7 @@ const startWebamp = () => {
                     title: "Melrose"
                 },
                 url: `${process.env.PUBLIC_URL}/Babytron-Melrose.mp3`,
-                duration: 134,
+                duration: 81,
             },
             {
                 metaData: {
