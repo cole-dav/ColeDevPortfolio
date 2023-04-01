@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Modal, Frame } from '@react95/core'
+import { Modal, Frame, ProgressBar } from '@react95/core'
 // import '@react95/icons/icons.css';
 import Item from './Item'
 
@@ -33,7 +33,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                 boxShadow="in"
                 height="100%"
             >
-                <FilesWrapper>
+                {/* <FilesWrapper>
                     {
                         items.map((item) => (
                             <Item
@@ -45,8 +45,8 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                         
                     }
                     
-                </FilesWrapper>
-               
+                </FilesWrapper> */}
+               <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={30} />
             </Frame>
         </Modal>
     )
