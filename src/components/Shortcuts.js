@@ -9,7 +9,7 @@ const StyledShorcut = styled.div`
 	align-items: center;
 `;
 
-function Shortcuts({ openExplorer }) {
+function Shortcuts({ openExplorer, openJackpot }) {
     return (
         <div>
             <StyledShorcut>
@@ -19,6 +19,14 @@ function Shortcuts({ openExplorer }) {
                     onClick={() => openExplorer()}
                 />
                 <div>Explorer</div>
+            </StyledShorcut>
+            <StyledShorcut>
+                <Icon
+                    className="pointer"
+                    name="calculator"
+                    onClick={() => openJackpot()}
+                />
+                <div>Jackpot</div>
             </StyledShorcut>
             <StyledShorcut>
                 <Icon
