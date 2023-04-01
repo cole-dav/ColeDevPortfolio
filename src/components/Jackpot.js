@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Modal, Frame, ProgressBar } from '@react95/core'
 // import '@react95/icons/icons.css';
 
