@@ -4,6 +4,7 @@ import { Modal, Frame } from '@react95/core'
 // import '@react95/icons/icons.css';
 import Item from './Item'
 
+
 const FilesWrapper = styled.div`
 	display: flex;
 	grid-template-columns: repeat(4, 1fr);
@@ -14,7 +15,7 @@ const FilesWrapper = styled.div`
 function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
     return (
         <Modal
-            icon="calculator"
+            icon="gcdef_100"
             title="Jackpot"
             closeModal={closeJackpot}
             style={{
@@ -41,8 +42,11 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                                 openNotepad={openNotepad}
                             />
                         ))
+                        
                     }
+                    
                 </FilesWrapper>
+               
             </Frame>
         </Modal>
     )

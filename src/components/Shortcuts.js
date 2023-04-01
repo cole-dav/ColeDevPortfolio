@@ -24,7 +24,7 @@ function Shortcuts({ openExplorer, openJackpot }) {
             <StyledShorcut>
                 <Icon
                     className="pointer"
-                    name="calculator"
+                    name="gcdef_100"
                     onClick={() => openJackpot()}
                 />
                 <div>Jackpot</div>
