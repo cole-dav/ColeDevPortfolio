@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Icon } from '@react95/core'
 import {startWebamp} from '../utils/startWebamp';
+// import '@react95/icons/icons.css';
 
 const StyledShorcut = styled.div`
     margin-left: 20px;
