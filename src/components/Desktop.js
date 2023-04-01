@@ -14,7 +14,7 @@ function Desktop() {
     const [explorerOpened, toggleExplorer] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [jackpotOpened, toggleJackpot] = useState(false);
-    const [selectedAction, setSelectedAction] = useState(null);
+    // const [selectedAction, setSelectedAction] = useState(null);
     const [notepadOpened, toggleNotepad] = useState(false);
     const [items, setItems] = useState([]);
 
@@ -25,7 +25,7 @@ function Desktop() {
             toggleExplorer(true);
             toggleJackpot(false);
             setSelectedItem(files[0]);
-            setSelectedAction(files[0]);
+            // setSelectedAction(files[0]);
             toggleNotepad(!isMobile);
         }, [data, isMobile]);
 
