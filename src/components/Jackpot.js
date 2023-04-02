@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Modal, Frame,Tabs, Input, Button, Fieldset,Checkbox,Dropdown } from '@react95/core'
+import { Modal, Frame,Tabs, Button, Fieldset,Checkbox,Dropdown } from '@react95/core'
 // import { } from '@react95/core/components';
 // import '@react95/icons/icons.css';
 // import { , Tab } from '../components/Tabs';
@@ -26,7 +26,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
             closeModal={closeJackpot}
             style={{
                 left: isMobile ? '5%' : '15%',
-                top: '30%',
+                top: isMobile ? '3%' : '15%',
                 width: isMobile ? '90%' : 400,
             }}
             menu={[
@@ -82,7 +82,15 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                         <Button style={{ width: 230, marginLeft: 22 }} > Open Pack</Button>    
                     </Tabs.Tab>
                     <Tabs.Tab title="Collection">
-                        <Input style={{ width: 180, marginLeft: 22 }} />    
+                            <Fieldset legend="Add Players" style={{ width: '300px' }}>
+                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Russell Wilson','Cooper Kupp','Baker Mayfield']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Russell Wilson','Cooper Kupp']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Cooper Kupp']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Derrick Henry', 'Cooper Kupp']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Derrick Henry']}  />
+                                <br/>
+                                <Button style={{ width: 200 }} > Collect Players</Button>    
+                            </Fieldset>  
                     </Tabs.Tab>
                 </Tabs>
                 
