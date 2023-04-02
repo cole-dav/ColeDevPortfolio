@@ -1,9 +1,14 @@
 import React from 'react'
-import { Modal, Frame,Tabs, Input, Button } from '@react95/core'
+import styled from 'styled-components';
+import { Modal, Frame,Tabs, Input, Button, Fieldset,Checkbox,Dropdown } from '@react95/core'
 // import { } from '@react95/core/components';
 // import '@react95/icons/icons.css';
 // import { , Tab } from '../components/Tabs';
 
+const CheckboxList = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 
 // const FilesWrapper = styled.div`
@@ -37,11 +42,37 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                 
                 {/* <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={30} /> */}
                 <br />
-                <Tabs style={{ width: 350 }} defaultActiveTab="Portfolio">
+                <Tabs style={{ width: 350 }} defaultActiveTab="Pack">
                     <Tabs.Tab title="Portfolio">
                         <div>
                             <h2>Account</h2>
-                            <p>Rank 1: Josh Allen</p>
+                            <Fieldset legend="Position" style={{ width: '300px' }}>
+                                <CheckboxList>
+                                    <Checkbox checked>QB</Checkbox> 
+                                    <Checkbox checked>WR</Checkbox>
+                                    <Checkbox checked>RB</Checkbox>
+                                    <Checkbox checked>TE</Checkbox>
+                                    
+                                </CheckboxList>
+                                
+                            </Fieldset>
+                            <Fieldset legend="Tier" style={{ width: '300px' }}>
+                                <CheckboxList>
+                                    <Checkbox checked>Common</Checkbox> 
+                                    <Checkbox checked>Preferred</Checkbox>
+                                    <Checkbox checked>Limited</Checkbox>
+                                    <Checkbox checked>Select</Checkbox>
+                                    
+                                </CheckboxList>
+                                <Dropdown style={{ width: 200 }} options={['Rank','Alphabetical', 'Price']}  />
+                            </Fieldset>
+                            
+                            <p>Tier 1: Patrick Mahomes II - 1st</p>
+                            <p>Tier 1: Derrick Henry - 18th</p>
+                            <p>Tier 1: Russell Wilson - 50th</p>
+                            <p>Tier 1: Cooper Kupp - 58th</p>
+                            <p>Tier 1: Baker Mayfield - 159th</p>
+                            
                         </div> 
                     </Tabs.Tab>
                     <Tabs.Tab title="Pack">
