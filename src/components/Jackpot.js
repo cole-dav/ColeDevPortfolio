@@ -84,7 +84,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                         </div> 
                     </Tabs.Tab>
                     <Tabs.Tab title="Pack">
-                        <Button onClick={() => alert(`Tier 1: Derrick Henry, \n Tier 1: Aaron Rodgers, \nTier 1: Baker Mayfield, \nTier 1: Cooper Kupp, \nTier 1: Russell Wilson`)}  style={{ width: 230, marginLeft: 22 }} > Open Pack</Button>    
+                        <Button onClick={() => alert(`Tier 1: Derrick Henry,\n Tier 1: Aaron Rodgers, \nTier 1: Baker Mayfield, \nTier 1: Cooper Kupp, \nTier 1: Russell Wilson`)}  style={{ width: 230, marginLeft: 22 }} > Open Pack</Button>    
                     </Tabs.Tab>
                     <Tabs.Tab title="Collection">
                             <Fieldset legend="Add Players" style={{ width: '300px' }}>
