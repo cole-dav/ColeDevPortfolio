@@ -70,8 +70,9 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                                 <Dropdown style={{ width: 200 }} options={['Rank','Alphabetical', 'Price']}  />
                             </Fieldset>
                             
-                            <p>Tier 1: Patrick Mahomes II - 1st</p>
+                            
                             <p>Tier 1: Derrick Henry - 18th</p>
+                            <p>Tier 1: Aaron Rodgers - 33rd</p>
                             <p>Tier 1: Russell Wilson - 50th</p>
                             <p>Tier 1: Cooper Kupp - 58th</p>
                             <p>Tier 1: Baker Mayfield - 159th</p>
