@@ -11,6 +11,9 @@ const CheckboxList = styled.div`
 `;
 
 
+    
+  
+
 // const FilesWrapper = styled.div`
 // 	display: flex;
 // 	grid-template-columns: repeat(4, 1fr);
@@ -58,10 +61,11 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                             </Fieldset>
                             <Fieldset legend="Tier" style={{ width: '300px' }}>
                                 <CheckboxList>
-                                    <Checkbox checked>Common</Checkbox> 
+                                    <Checkbox checked>Common</Checkbox>
+                                    <Checkbox checked>Select</Checkbox> 
                                     <Checkbox checked>Preferred</Checkbox>
                                     <Checkbox checked>Limited</Checkbox>
-                                    <Checkbox checked>Select</Checkbox>
+                                    
                                     
                                 </CheckboxList>
                                 {/* <Dropdown style={{ width: 200 }} options={['Rank','Alphabetical', 'Price']}  /> */}
@@ -80,7 +84,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                         </div> 
                     </Tabs.Tab>
                     <Tabs.Tab title="Pack">
-                        <Button style={{ width: 230, marginLeft: 22 }} > Open Pack</Button>    
+                        <Button  style={{ width: 230, marginLeft: 22 }} > Open Pack</Button>    
                     </Tabs.Tab>
                     <Tabs.Tab title="Collection">
                             <Fieldset legend="Add Players" style={{ width: '300px' }}>
@@ -90,7 +94,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                                 <Dropdown style={{ width: 200 }} options={['','Derrick Henry', 'Cooper Kupp']}  />
                                 <Dropdown style={{ width: 200 }} options={['','Derrick Henry']}  />
                                 <br/>
-                                <Button style={{ width: 200 }} > Collect Players</Button>    
+                                <Button onClick={() => alert("Tier 2: Lamar Jackson - QB!")} style={{ width: 200 }} > Collect Players</Button>
                             </Fieldset>  
                     </Tabs.Tab>
                 </Tabs>
