@@ -33,7 +33,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                 height="100%"
             >
                 
-               <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={30} />
+               <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={31} />
                
 
             </Frame>
