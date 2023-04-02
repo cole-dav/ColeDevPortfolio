@@ -64,6 +64,9 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                                     <Checkbox checked>Select</Checkbox>
                                     
                                 </CheckboxList>
+                                {/* <Dropdown style={{ width: 200 }} options={['Rank','Alphabetical', 'Price']}  /> */}
+                            </Fieldset>
+                            <Fieldset legend="Sort" style={{ width: '300px' }}>
                                 <Dropdown style={{ width: 200 }} options={['Rank','Alphabetical', 'Price']}  />
                             </Fieldset>
                             
