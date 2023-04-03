@@ -88,9 +88,9 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                     </Tabs.Tab>
                     <Tabs.Tab title="Collection">
                             <Fieldset legend="Add Players" style={{ width: '300px' }}>
-                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Russell Wilson','Cooper Kupp','Baker Mayfield']}  />
-                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Russell Wilson','Cooper Kupp']}  />
-                                <Dropdown style={{ width: 200 }} options={['','Patrick Mahomes II','Derrick Henry', 'Cooper Kupp']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Aaron Rodgers','Derrick Henry', 'Russell Wilson','Cooper Kupp','Baker Mayfield']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Aaron Rodgers','Derrick Henry', 'Russell Wilson','Cooper Kupp']}  />
+                                <Dropdown style={{ width: 200 }} options={['','Aaron Rodgers','Derrick Henry', 'Cooper Kupp']}  />
                                 <Dropdown style={{ width: 200 }} options={['','Derrick Henry', 'Cooper Kupp']}  />
                                 <Dropdown style={{ width: 200 }} options={['','Derrick Henry']}  />
                                 <br/>
