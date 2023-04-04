@@ -1,5 +1,6 @@
 # Jackpot Game
 * First launch of our new game
+* Live [here](https://jackpotfantasy.us/)
 
 
 ## Credits
