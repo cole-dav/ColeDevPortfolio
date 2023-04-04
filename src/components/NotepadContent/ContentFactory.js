@@ -22,8 +22,10 @@ function ContentFactory({ id, isMobile }) {
     switch (item.id) {
         case 'about':
             return <About content={item.content} />
-        case 'resume':
+        case 'ColeResume':
             return <Resume content={item.content} />
+        case 'PeterResume':
+            return <Resume content={item.content} />        
         case 'skills':
             return <Skills content={item.content} isMobile={isMobile} />
         case 'contact':

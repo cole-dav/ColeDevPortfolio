@@ -22,8 +22,8 @@ function Desktop() {
         () => {
             const files = data.getItems();
             setItems(files);
-            toggleExplorer(true);
-            toggleJackpot(false);
+            toggleExplorer(false);
+            toggleJackpot(true);
             setSelectedItem(files[0]);
             // setSelectedAction(files[0]);
             toggleNotepad(!isMobile);

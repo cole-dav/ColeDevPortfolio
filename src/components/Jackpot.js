@@ -1,8 +1,18 @@
 import React from 'react'
-import { Modal, Frame, ProgressBar } from '@react95/core'
+import styled from 'styled-components';
+import { Modal, Frame,Tabs, Button, Fieldset,Checkbox,Dropdown } from '@react95/core'
+// import { } from '@react95/core/components';
 // import '@react95/icons/icons.css';
+// import { , Tab } from '../components/Tabs';
+
+const CheckboxList = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 
+    
+  
 
 // const FilesWrapper = styled.div`
 // 	display: flex;
@@ -19,7 +29,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
             closeModal={closeJackpot}
             style={{
                 left: isMobile ? '5%' : '15%',
-                top: '30%',
+                top: isMobile ? '3%' : '15%',
                 width: isMobile ? '90%' : 400,
             }}
             menu={[
@@ -32,9 +42,8 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                 boxShadow="in"
                 height="100%"
             >
-                
+ 
                <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={31} />
-               
 
             </Frame>
         </Modal>
