@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Modal, Frame,Tabs, Button, Fieldset,Checkbox,Dropdown,ProgressBar } from '@react95/core'
+import { Modal, Frame,ProgressBar } from '@react95/core'
 // import { } from '@react95/core/components';
 // import '@react95/icons/icons.css';
 // import { , Tab } from '../components/Tabs';
 
-const CheckboxList = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+// const CheckboxList = styled.div`
+//   display: flex;
+//   flex-direction: row;
+// `;
 
 
     
