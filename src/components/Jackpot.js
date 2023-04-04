@@ -30,7 +30,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
             style={{
                 left: isMobile ? '5%' : '15%',
                 top: isMobile ? '3%' : '15%',
-                width: isMobile ? '90%' : 400,
+                width: isMobile ? '95%' : 400,
             }}
             menu={[
                 { name: 'File', list: [] },
