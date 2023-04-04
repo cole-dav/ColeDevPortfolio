@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Modal, Frame,Tabs, Button, Fieldset,Checkbox,Dropdown } from '@react95/core'
+import { Modal, Frame,Tabs, Button, Fieldset,Checkbox,Dropdown,ProgressBar } from '@react95/core'
 // import { } from '@react95/core/components';
 // import '@react95/icons/icons.css';
 // import { , Tab } from '../components/Tabs';
@@ -43,7 +43,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                 height="100%"
             >
  
-               <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={31} />
+               <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={32} />
 
             </Frame>
         </Modal>
