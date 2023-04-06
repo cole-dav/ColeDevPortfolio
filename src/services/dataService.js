@@ -69,6 +69,67 @@ export default class DataService {
         },
       },
       {
+        id: 'projects',
+        name: 'Projects.txt',
+        icon: 'flying_through_space_100',
+        content: {
+          projects: [
+            {
+              title: 'Jackpot ',
+              description:
+                'Jackpot is a sports consumption revolution ',
+              techStack: 'React, Firebase, Flow',
+              myRole: 'Founder',
+              // url: 'https://pitch.com/public/ccc225dd-fe63-43b5-aa44-ddd1121add0b',
+              // repo: 'https://github.com/cole-dav',
+            },
+            
+          ],
+        },
+      },
+      {
+        id: 'skills',
+        name: 'Skills.txt',
+        icon: 'progman_11',
+        content: {
+          hard: [
+            {
+              name: 'Java',
+              progress: 90,
+            },
+            {
+              name: 'SQL',
+              progress: 80,
+            },
+            {
+              name: 'Python',
+              progress: 80,
+            },
+            {
+              name: 'React',
+              progress: 80,
+            },
+            {
+              name: 'Solidity',
+              progress: 80,
+            },
+            {
+              name: 'AWS/Azure',
+              progress: 70,
+            },
+            {
+              name: 'Databricks',
+              progress: 70,
+            },
+            {
+              name: 'Blockchain',
+              progress: 60,
+            },
+          ],
+          soft: 'Analytical Thinking, Entrepreneurship, Creative Problem Solving, Leadership, Teamwork ',
+        },
+      },
+      {
         id: 'PeterResume',
         name: 'PeterResume.txt',
         icon: 'notepad_2',
@@ -118,67 +179,6 @@ export default class DataService {
               period: 'AUG 2019 - JULY 2024',
             },
           ],
-        },
-      },
-      {
-        id: 'projects',
-        name: 'Projects.txt',
-        icon: 'flying_through_space_100',
-        content: {
-          projects: [
-            {
-              title: 'Jackpot ',
-              description:
-                'Jackpot is a sports consumption revolution ',
-              techStack: 'React, Firebase, Flow',
-              myRole: 'Founder',
-              // url: 'https://pitch.com/public/ccc225dd-fe63-43b5-aa44-ddd1121add0b',
-              // repo: 'https://github.com/cole-dav',
-            },
-            
-          ],
-        },
-      },
-      {
-        id: 'skills',
-        name: 'Skills.txt',
-        icon: 'progman_11',
-        content: {
-          hard: [
-            {
-              name: 'Gambling',
-              progress: 100,
-            },
-            {
-              name: 'Ball',
-              progress: 90,
-            },
-            {
-              name: 'Docker',
-              progress: 90,
-            },
-            {
-              name: 'MongoDB',
-              progress: 80,
-            },
-            {
-              name: 'Typescript',
-              progress: 70,
-            },
-            {
-              name: 'AWS/Azure',
-              progress: 70,
-            },
-            {
-              name: 'Kubernetes',
-              progress: 60,
-            },
-            {
-              name: 'Hadoop',
-              progress: 50,
-            },
-          ],
-          soft: 'Analytical thinking, Teamwork, Creative Problem solving, Mangement, Leadership, Entrepreneurship',
         },
       },
       {
