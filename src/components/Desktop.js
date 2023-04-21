@@ -15,7 +15,7 @@ function Desktop() {
     const [explorerOpened, toggleExplorer] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [jackpotOpened, toggleJackpot] = useState(false);
-    const [ChatroomOpened, toggleChatroom] = useState(false);
+    const [chatroomOpened, toggleChatroom] = useState(false);
     // const [selectedAction, setSelectedAction] = useState(null);
     const [notepadOpened, toggleNotepad] = useState(false);
     const [items, setItems] = useState([]);
@@ -87,7 +87,7 @@ function Desktop() {
                 )
             }
             { 
-                ChatroomOpened && (
+                chatroomOpened && (
                     <Chatroom items={items} closeChatroom={closeChatroom} openNotepad={openNotepad} isMobile={isMobile} />
                 )
             }

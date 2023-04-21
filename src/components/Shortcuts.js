@@ -32,7 +32,7 @@ function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
             <StyledShorcut>
                 <Icon
                     className="pointer"
-                    name="calculator"
+                    name="file_pen"
                     onClick={()=>openChatroom()}
                 />
                 <div>Chatroom</div>

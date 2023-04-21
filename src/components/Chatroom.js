@@ -33,13 +33,13 @@ const firestore = firebase.firestore();
 //     left: 10%;
 // `
 
-function Chatroom(closeChatroom, isMobile) {
+function Chatroom(items, closeChatroom, isMobile) {
     const [user] = useAuthState(auth);
 
     return (
 
         <Modal
-            icon="calculator"
+            icon="file_pen"
             title="Chatroom"
             closeModal={closeChatroom}
             style={{
@@ -59,10 +59,7 @@ function Chatroom(closeChatroom, isMobile) {
             >
  
                 <div className="App">
-                {/* <header>
-                    <h1>fire</h1>
-                    <SignOut />
-                </header> */}
+                
 
                 <section>
                     {user ? <ChatRoom /> : <SignIn />}
@@ -78,6 +75,7 @@ function Chatroom(closeChatroom, isMobile) {
         
     );
 }
+
 function SignIn() {
 
     const signInWithGoogle = () => {
@@ -93,6 +91,7 @@ function SignIn() {
     )
   
 }
+
 function ChatRoom() {
     const dummy = useRef();
     const messagesRef = firestore.collection('messages');
@@ -130,9 +129,9 @@ function ChatRoom() {
   
       <form onSubmit={sendMessage}>
   
-        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="type message" />
   
-        <button type="submit" disabled={!formValue}>bird</button>
+        <button type="submit" disabled={!formValue}>post</button>
   
       </form>
     </>)
