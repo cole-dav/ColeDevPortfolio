@@ -10,7 +10,7 @@ const StyledShorcut = styled.div`
 	align-items: center;
 `;
 
-function Shortcuts({ openExplorer, openJackpot }) {
+function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
     return (
         <div>
             <StyledShorcut>
@@ -28,6 +28,14 @@ function Shortcuts({ openExplorer, openJackpot }) {
                     onClick={() => openJackpot()}
                 />
                 <div>Jackpot</div>
+            </StyledShorcut>
+            <StyledShorcut>
+                <Icon
+                    className="pointer"
+                    name="calculator"
+                    onClick={()=>openChatroom()}
+                />
+                <div>Chatroom</div>
             </StyledShorcut>
             <StyledShorcut>
                 <Icon
