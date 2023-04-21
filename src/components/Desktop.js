@@ -4,7 +4,8 @@ import Jackpot from './Jackpot'
 import Notepad from './Notepad';
 import DataContext from '../contexts/dataContext'
 import Shortcuts from './Shortcuts';
-import Player from './Player';
+import Player from './Player'; 
+import Chatroom from './Chatroom';
 
 function Desktop() {
 
@@ -14,6 +15,7 @@ function Desktop() {
     const [explorerOpened, toggleExplorer] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [jackpotOpened, toggleJackpot] = useState(false);
+    const [chatroomOpened, toggleChatroom] = useState(false);
     // const [selectedAction, setSelectedAction] = useState(null);
     const [notepadOpened, toggleNotepad] = useState(false);
     const [items, setItems] = useState([]);
@@ -24,6 +26,7 @@ function Desktop() {
             setItems(files);
             toggleExplorer(true);
             toggleJackpot(false);
+            toggleChatroom(false);
             setSelectedItem(files[0]);
             // setSelectedAction(files[0]);
             toggleNotepad(!isMobile);
@@ -46,6 +49,15 @@ function Desktop() {
         toggleJackpot(true);
     };
 
+    const closeChatroom = () => {
+        toggleChatroom(false);
+    };
+
+    const openChatroom = () => {
+        toggleChatroom(true);
+    };
+     
+
     const closeNotepad = () => {
         toggleNotepad(false);
     };
@@ -57,8 +69,8 @@ function Desktop() {
 
     return (
         <React.Fragment>
-            <Shortcuts openExplorer={openExlorer } openJackpot={openJackpot}/>
-            {/* <Shortcuts openJackpot={openJackpot} /> */}
+            <Shortcuts openExplorer={openExlorer } openJackpot={openJackpot} openChatroom={openChatroom}/>
+            
             {
                 explorerOpened && (
                     <Explorer items={items} closeExplorer={closeExplorer} openNotepad={openNotepad} isMobile={isMobile} />
@@ -69,9 +81,14 @@ function Desktop() {
                     <Notepad closeNotepad={closeNotepad} selectedItem={selectedItem} isMobile={isMobile} />
                 )
             }
-            {
+            { 
                 jackpotOpened && (
                     <Jackpot items={items} closeJackpot={closeJackpot} openNotepad={openNotepad} isMobile={isMobile} />
+                )
+            }
+            { 
+                chatroomOpened && (
+                    <Chatroom items={items} closeChatroom={closeChatroom} openNotepad={openNotepad} isMobile={isMobile} />
                 )
             }
             

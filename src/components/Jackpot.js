@@ -21,7 +21,7 @@ import { Modal, Frame,ProgressBar } from '@react95/core'
 // `;
 
 
-function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
+function Jackpot({ items, closeJackpot,openNotepad, isMobile }) {
     return (
         <Modal
             icon="gcdef_100"
