@@ -33,13 +33,13 @@ const firestore = firebase.firestore();
 //     left: 10%;
 // `
 
-function Chatroom(items, closeChatroom, isMobile) {
+
+function Chatroom({ items, closeChatroom,openNotepad, isMobile }) {
     const [user] = useAuthState(auth);
 
     return (
-
         <Modal
-            icon="file_pen"
+            icon="gcdef_100"
             title="Chatroom"
             closeModal={closeChatroom}
             style={{
@@ -69,12 +69,9 @@ function Chatroom(items, closeChatroom, isMobile) {
 
             </Frame>
         </Modal>
-
-
-
-        
-    );
+    )
 }
+
 
 function SignIn() {
 
