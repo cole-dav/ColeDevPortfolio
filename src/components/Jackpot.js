@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Modal, Frame,Tabs,Fieldset,Dropdown,Button,Checkbox } from '@react95/core'
+import { Modal, Frame,Tabs,Fieldset,Dropdown,Button,Checkbox,Input } from '@react95/core'
 
 
 const CheckboxList = styled.div`
@@ -93,6 +93,12 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                                  <br/>
                                  <Button onClick={() => alert("Tier 2: Lamar Jackson - QB!")} style={{ width: 200 }} > Collect Players</Button>
                              </Fieldset>  
+                     </Tabs.Tab>
+                     <Tabs.Tab title="Search">
+                        <CheckboxList>
+                            <Input style={{ width: 230, marginLeft: 8 }} />
+                            <Button style={{marginLeft: '10px'}}>Search</Button>
+                        </CheckboxList>
                      </Tabs.Tab>
                  </Tabs>
 
