@@ -1,6 +1,7 @@
-import React from 'react'
+import React , { useState }from 'react'
 import styled from 'styled-components';
-import { Modal, Frame,Tabs,Fieldset,Dropdown,Button,Checkbox,Input } from '@react95/core'
+import { Modal,Video, Frame,Tabs,Fieldset,Dropdown,Button,Checkbox,Input } from '@react95/core'
+import EXPLORER_VIDEO from '../assets/Jalen_The_System_Hurts.mp4';
 
 
 const CheckboxList = styled.div`
@@ -20,6 +21,13 @@ const CheckboxList = styled.div`
 
 
 function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
+    const [inputText, setInputText] = useState('');
+    const [isViewVisible, setIsViewVisible] = useState(false);
+    const handleButtonClick = () => {
+        
+        setIsViewVisible(true);
+      };
+
     return (
         <Modal
             icon="gcdef_100"
@@ -42,6 +50,7 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
             >
  
             <br />
+            <h2 style={{ marginLeft: '50px' }}>Jackpot $512,519</h2>
                  <Tabs style={{ width: 350 }} defaultActiveTab="Pack">
                      <Tabs.Tab title="Portfolio">
                          <div>
@@ -96,9 +105,19 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                      </Tabs.Tab>
                      <Tabs.Tab title="Search">
                         <CheckboxList>
-                            <Input style={{ width: 230, marginLeft: 8 }} />
-                            <Button style={{marginLeft: '10px'}}>Search</Button>
+                            <Input value={inputText} onChange={(e) => setInputText(e.target.value)} style={{ width: 230, marginLeft: 8 }} />
+                            <Button onClick={handleButtonClick} style={{marginLeft: '10px'}}>Search</Button>
                         </CheckboxList>
+                        {isViewVisible && (
+                            <view> 
+                                <div></div>
+                                <div>     Boy Can He</div>
+                                <div></div>
+                                <Video w="320" src={EXPLORER_VIDEO} name="Jalen Hurts" />
+                            </view>
+                            
+                            
+                        )}
                      </Tabs.Tab>
                  </Tabs>
 
