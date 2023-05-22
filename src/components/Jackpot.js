@@ -111,9 +111,12 @@ function Jackpot({ items, closeJackpot, openNotepad, isMobile }) {
                         {isViewVisible && (
                             <view> 
                                 <div></div>
-                                <div>     Boy Can He</div>
+                                <p>True Completion: 42.4% #8</p>
+                                <p>Interceptable Passes: 18 #24</p>
+                                <p>Air Yards per Attempt: 8.2 #12</p>
                                 <div></div>
                                 <Video w="320" src={EXPLORER_VIDEO} name="Jalen Hurts" />
+
                             </view>
                             
                             
