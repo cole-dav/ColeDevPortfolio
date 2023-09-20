@@ -1,5 +1,4 @@
-# Jackpot Game
-* First launch of our new game
+# Developer Showcase
 * Live [here](https://jackpotfantasy.us/)
 
 
