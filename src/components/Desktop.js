@@ -81,7 +81,7 @@ function Desktop() {
                     <Notepad closeNotepad={closeNotepad} selectedItem={selectedItem} isMobile={isMobile} />
                 )
             }
-            { 
+            {/* { 
                 jackpotOpened && (
                     <Jackpot items={items} closeJackpot={closeJackpot} openNotepad={openNotepad} isMobile={isMobile} />
                 )
@@ -90,7 +90,7 @@ function Desktop() {
                 chatroomOpened && (
                     <Chatroom items={items} closeChatroom={closeChatroom} openNotepad={openNotepad} isMobile={isMobile} />
                 )
-            }
+            } */}
             
             <Player />
         </React.Fragment>
