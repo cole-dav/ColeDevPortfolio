@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Explorer from './Explorer'
-import Jackpot from './Jackpot'
+// import Jackpot from './Jackpot'
 import Notepad from './Notepad';
 import DataContext from '../contexts/dataContext'
 import Shortcuts from './Shortcuts';
 import Player from './Player'; 
-import Chatroom from './Chatroom';
+// import Chatroom from './Chatroom';
 
 function Desktop() {
 
@@ -14,8 +14,8 @@ function Desktop() {
     const data = useContext(DataContext);
     const [explorerOpened, toggleExplorer] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
-    const [jackpotOpened, toggleJackpot] = useState(false);
-    const [chatroomOpened, toggleChatroom] = useState(false);
+    // const [jackpotOpened, toggleJackpot] = useState(false);
+    // const [chatroomOpened, toggleChatroom] = useState(false);
     // const [selectedAction, setSelectedAction] = useState(null);
     const [notepadOpened, toggleNotepad] = useState(false);
     const [items, setItems] = useState([]);
@@ -25,8 +25,8 @@ function Desktop() {
             const files = data.getItems();
             setItems(files);
             toggleExplorer(true);
-            toggleJackpot(false);
-            toggleChatroom(false);
+            // toggleJackpot(false);
+            // toggleChatroom(false);
             setSelectedItem(files[0]);
             // setSelectedAction(files[0]);
             toggleNotepad(!isMobile);
@@ -41,21 +41,21 @@ function Desktop() {
         toggleExplorer(true);
     };
 
-    const closeJackpot = () => {
-        toggleJackpot(false);
-    };
+    // const closeJackpot = () => {
+    //     toggleJackpot(false);
+    // };
 
-    const openJackpot = () => {
-        toggleJackpot(true);
-    };
+    // const openJackpot = () => {
+    //     toggleJackpot(true);
+    // };
 
-    const closeChatroom = () => {
-        toggleChatroom(false);
-    };
+    // const closeChatroom = () => {
+    //     toggleChatroom(false);
+    // };
 
-    const openChatroom = () => {
-        toggleChatroom(true);
-    };
+    // const openChatroom = () => {
+    //     toggleChatroom(true);
+    // };
      
 
     const closeNotepad = () => {
@@ -69,7 +69,7 @@ function Desktop() {
 
     return (
         <React.Fragment>
-            <Shortcuts openExplorer={openExlorer } openJackpot={openJackpot} openChatroom={openChatroom}/>
+            <Shortcuts openExplorer={openExlorer } />
             
             {
                 explorerOpened && (

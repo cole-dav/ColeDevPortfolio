@@ -18,7 +18,7 @@ const startWebamp = () => {
                     title: "mystery"
                 },
                 url: `${process.env.PUBLIC_URL}/DIAND.mp3`,
-                duration: 81,
+                duration: 143,
             },
             {
                 metaData: {

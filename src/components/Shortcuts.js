@@ -21,7 +21,7 @@ function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
                 />
                 <div>Explorer</div>
             </StyledShorcut>
-            <StyledShorcut>
+            {/* <StyledShorcut>
                 <Icon
                     className="pointer"
                     name="gcdef_100"
@@ -36,7 +36,7 @@ function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
                     onClick={()=>openChatroom()}
                 />
                 <div>Chatroom</div>
-            </StyledShorcut>
+            </StyledShorcut> */}
             <StyledShorcut>
                 <Icon
                     className="pointer"
