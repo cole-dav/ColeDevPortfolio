@@ -1,5 +1,4 @@
-# Jackpot Game
-* First launch of our new game
+# Personal Website Portfolio
 * Live [here](https://jackpotfantasy.us/)
 
 
