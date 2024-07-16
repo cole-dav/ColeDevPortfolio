@@ -1,5 +1,5 @@
 # Developer Showcase
-* Live [here](https://jackpotfantasy.us/)
+* Live [here](https://coledavis.netlify.app)
 
 
 ## Credits
