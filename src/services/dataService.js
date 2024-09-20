@@ -9,9 +9,9 @@ export default class DataService {
         icon: 'info_bubble',
         content: {
           paragraphs: [
-            "Jackpot removes the bounds of rosters, drafts, salary caps, and rules of existing fantasy games. Instead, we introduce an intuitive system consisting of shares, dividends,and an exchange.",
-            "Objective:",
-            'Create a portfolio of the best fantasy performers of the season for the highest payout',
+            "I am a software engineer with a passion for entrepreneurship and innovative problem-solving.",
+            "As the founder of a pioneering sports app, I have led cross-functional teams to deliver impactful features and drive user engagement.",
+            "With a background in computer science from Georgia Tech, I have experience in full-stack development, blockchain technologies, and product management.",
           ],
         },
       },
@@ -24,46 +24,78 @@ export default class DataService {
             'https://docs.google.com/document/d/1_p-cuDf27i5g3dFtYcN1cgRSEwmD9yreALwTdZdXzwk/export?format=pdf',
           workExperience: [
             {
+              jobTitle: 'Software Engineer I',
+              company: 'BlackRock',
+              location: 'Atlanta, GA',
+              period: 'Aug 2024 – Present',
+              accomplishments: [
+                'Working as a full-stack developer in Angular, building micro front-ends supporting $4 trillion worth of ETFs',
+              ],
+            },
+            {
+              jobTitle: 'Founder',
+              company: 'Pitch',
+              location: 'Atlanta, GA',
+              period: 'Nov 2022 – Present',
+              accomplishments: [
+                'Led full-stack development, integrating databases, optimizing data pipelines, and enhancing UI/UX',
+                'Directed a team of 4 engineers and designers, achieving sprint goals and delivering impactful features on schedule',
+                'Innovated a fantasy league platform utilizing stake management to enhance fan engagement and competitive interaction',
+              ],
+            },
+            {
               jobTitle: 'Software Engineering Intern',
               company: 'BlackRock',
-              location: 'Atlanta',
-              period: 'JUNE 2022 – AUG 2022',
+              location: 'Atlanta, GA',
+              period: 'June 2022 – Aug 2022',
               accomplishments: [
-                'Built system to represent legal agreements on the Ethereum blockchain and interact with them using Spring Boot',
-                'Implemented Solidity smart contract to handle voting permissions, voting statuses, and agreement data storage',
-                'Refactored existing UI APIs to retrieve agreement data and deploy new agreement contract instances on Ethereum',
+                'Built a system to represent legal agreements on the Ethereum blockchain using Spring Boot',
+                'Implemented Solidity smart contracts for voting permissions, statuses, and agreement data storage',
+                'Refactored UI APIs to deploy new agreement contract instances on Ethereum',
               ],
             },
             {
               jobTitle: 'Statim Operator Manager',
               company: 'Tempus Ex Machina',
-              location: 'Atlanta',
-              period: 'AUG 2021 - PRESENT',
+              location: 'Atlanta, GA',
+              period: 'Aug 2021 – Present',
               accomplishments: [
-                'Facilitated season long play-by-play data collection for the NFL and PAC-12 via Statim application',
-                'Contributed to implementation of upgrades and modifications to the application during the inaugural season',
-                'Responsible for setup of office data feed on game days and assisting operators through technical difficulties ',
-                'Reported bugs and suggested new features to the dev. team for quality assurance and user-experience upgrades',
+                'Facilitated machine learning play-by-play data collection for the NFL and PAC-12 via Statim application',
+                'Contributed to application upgrades during the inaugural season',
+                'Reported bugs and suggested features for quality assurance and UX improvements',
+                'Assisted operators with technical difficulties on game days',
               ],
             },
             {
               jobTitle: 'Software Engineering Intern',
               company: 'Carmax',
               location: 'Remote',
-              period: 'JUNE 2021 – AUG 2021',
+              period: 'June 2021 – Aug 2021',
               accomplishments: [
-                'Created a monitoring system for data mart load statuses that saved 1hr in daily troubleshooting ',
-                'Built reports for data loads in PowerBI and implemented conditional report distribution based on current load times',
-                'Resolved Adobe click data ingestion flaw that resulted in at least 1 major clog a week on databricks',
+                'Created a monitoring system for data mart load statuses, reducing troubleshooting time by 1 hour daily',
+                'Built PowerBI reports for data loads with conditional distribution based on load times',
+                'Resolved Adobe click data ingestion issues causing weekly clogs on Databricks',
+              ],
+            },
+            {
+              jobTitle: 'Catering Manager',
+              company: 'Cabakis Catering',
+              location: 'Dacula, GA',
+              period: 'April 2018 – Aug 2020',
+              accomplishments: [
+                'Led a team of servers and staff during events and preparation days',
+                'Ensured successful contract fulfillment with consistent client satisfaction',
+                'Customized services based on client needs for repeat business',
               ],
             },
           ],
           education: [
             {
-              credit: 'Bachelor in Computer Science',
+              credit: 'B.S. in Computer Science',
               place: 'Georgia Institute of Technology',
               gpa: '3.32/4.0 GPA',
-              period: 'AUG 2019 - JULY 2023',
+              period: 'Aug 2019 – Dec 2023',
+              accolades: ['Zell Miller Scholar'],
             },
           ],
         },
@@ -75,15 +107,20 @@ export default class DataService {
         content: {
           projects: [
             {
-              title: 'Jackpot ',
+              title: 'Pitch',
               description:
-                'Jackpot is a sports consumption revolution ',
+                'An innovative fantasy sports platform utilizing stake management to enhance fan engagement and competitive interaction.',
               techStack: 'React Native, Supabase',
               myRole: 'Founder',
-              // url: 'https://pitch.com/public/ccc225dd-fe63-43b5-aa44-ddd1121add0b',
-              // repo: 'https://github.com/cole-dav',
             },
-            
+            {
+              title: 'SmartStu.Space',
+              description:
+                "A solution for musician's block that generates fresh lyrics by analyzing web-scraped songs from Genius.",
+              techStack: 'Python, AWS',
+              myRole: 'Developer',
+              accolades: ['1st Place at Clemson University MLH Hackathon – Creativity Award'],
+            },
           ],
         },
       },
@@ -93,99 +130,53 @@ export default class DataService {
         icon: 'progman_11',
         content: {
           hard: [
-            {
-              name: 'Java',
-              progress: 90,
-            },
-            {
-              name: 'SQL',
-              progress: 80,
-            },
-            {
-              name: 'Python',
-              progress: 80,
-            },
-            {
-              name: 'React',
-              progress: 80,
-            },
-            {
-              name: 'Solidity',
-              progress: 80,
-            },
-            {
-              name: 'AWS/Azure',
-              progress: 70,
-            },
-            {
-              name: 'Databricks',
-              progress: 70,
-            },
+            { name: 'Java', progress: 90 },
+            { name: 'Python', progress: 90 },
+            { name: 'React Native', progress: 85 },
+            { name: 'Angular', progress: 85 },
+            { name: 'Postgres', progress: 85 },
+            { name: 'Solidity', progress: 75 },
+            { name: 'Spring Boot', progress: 75 },
+            { name: 'Databricks', progress: 75 },
+            { name: 'AWS/Azure', progress: 75 },
+            { name: 'Tableau', progress: 70 },
+            { name: 'MATLAB', progress: 70 },
           ],
-          soft: 'Analytical Thinking, Entrepreneurship, Creative Problem Solving, Leadership, Teamwork ',
+          certificates: [
+            'Google Data Analytics',
+            'Associate SQL Analyst – Databricks Academy',
+            'Databricks Lakehouse Platform Accreditation',
+            'Microsoft Azure Fundamentals',
+          ],
+          roles: {
+            'Product Manager (PM)': [
+              'Oversaw strategy, roadmap, and execution of a sports app, balancing user needs with business goals',
+              'Collaborated cross-functionally to align product vision with engineering execution',
+              'Conducted market analysis and user research to inform product decisions',
+            ],
+            'Business Analyst (BA)': [
+              'Led analytics and performance tracking for a sports app, translating data insights into actionable strategies',
+              'Managed financial modeling and investment analysis, aiding in raising significant funding',
+              'Developed and monitored KPIs to evaluate product success',
+            ],
+            'Software Engineer (SWE)': [
+              'Architected and developed system infrastructure for a sports app',
+              'Collaborated with an international team to implement agile development practices',
+              'Implemented automation tools and monitoring systems to enhance performance',
+            ],
+          },
+          soft: 'Analytical Thinking, Entrepreneurship, Creative Problem Solving, Leadership, Teamwork',
         },
       },
-      // {
-      //   id: 'PeterResume',
-      //   name: 'PeterResume.txt',
-      //   icon: 'notepad_2',
-      //   content: {
-      //     resumeLink:
-      //       'https://docs.google.com/document/d/1Wp9BQQXdWX_MHDb_Beq70eJDQGPXU9PC1Q50EK--VrY/export?format=pdf',
-      //     workExperience: [
-      //       {
-      //         jobTitle: 'Investment Banking Summer Analyst',
-      //         company: 'Citigroup (NYSE: C)',
-      //         location: 'New York',
-      //         period: 'JUNE 2023 – AUG 2023',
-      //         accomplishments: [
-      //           'Incoming Investment Banking summer analyst for GSP Financing and Securitization',
-                
-      //         ],
-      //       },
-      //       {
-      //         jobTitle: 'Statim Operator',
-      //         company: 'Tempus Ex Machina',
-      //         location: 'Atlanta',
-      //         period: 'AUG 2021 - PRESENT',
-      //         accomplishments: [
-      //           'Facilitated season long play-by-play data collection for the NFL and PAC-12 via Statim application',
-      //           'Contributed to implementation of upgrades and modifications to the application during the inaugural season',
-      //           'Responsible for setup of office data feed on game days and assisting operators through technical difficulties ',
-      //           'Reported bugs and suggested new features to the dev. team for quality assurance and user-experience upgrades',
-      //         ],
-      //       },
-      //       {
-      //         jobTitle: 'Corporate Finance Summer Analyst',
-      //         company: 'VICI Properties',
-      //         location: 'New York',
-      //         period: 'JUNE 2022 – AUG 2022',
-      //         accomplishments: [
-      //           'Analyzed and summarized the $17.2bn acquisition of MGM Growth Properties by VICI Properties',
-      //           'Created a model to estimate & compare WACC of competing REITs accounting for new Fed rates',
-      //           'Authored a white paper on an emerging experiential industry and presented opportunities to managment',
-      //         ],
-      //       },
-      //     ],
-      //     education: [
-      //       {
-      //         credit: 'BS and MS in Economics',
-      //         place: 'Georgia Institute of Technology',
-      //         gpa: '3.5/4.0 GPA',
-      //         period: 'AUG 2019 - JULY 2024',
-      //       },
-      //     ],
-      //   },
-      // },
       {
         id: 'contact',
         name: 'Contact.txt',
         icon: 'inetcfg_2301',
         content: {
           emailText:
-            'If you want to hire me or collaberate on a project, just email me at ',
+            'If you want to hire me or collaborate on a project, just email me at ',
           email: 'dc@gatech.edu',
-          socialText: 'Or you can reach me out through social media:',
+          socialText: 'Or you can reach me through social media:',
           social: [
             {
               name: 'FaLinkedin',
@@ -198,10 +189,6 @@ export default class DataService {
             {
               name: 'FaInstagram',
               link: 'https://www.instagram.com/coledavis._/',
-            },
-            {
-              name: 'FaTwitter',
-              link: 'https://twitter.com/jackpotcole',
             },
           ],
         },

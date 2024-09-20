@@ -24,8 +24,6 @@ function ContentFactory({ id, isMobile }) {
             return <About content={item.content} />
         case 'ColeResume':
             return <Resume content={item.content} />
-        case 'PeterResume':
-            return <Resume content={item.content} />        
         case 'skills':
             return <Skills content={item.content} isMobile={isMobile} />
         case 'contact':
