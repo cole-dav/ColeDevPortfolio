@@ -16,6 +16,7 @@ function Projects({ content }) {
                 projects.map((project, idx) => (
                     <div key={idx}>
                         <h3>{project.title}</h3>
+                        <p>{project.line}</p>
                         <p>{project.description}</p>
                         {
                             project.myRole &&

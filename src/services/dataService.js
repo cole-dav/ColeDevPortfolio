@@ -115,14 +115,16 @@ export default class DataService {
             },
             {
               title: 'SmartStu.Space',
-              description: "An AI-powered music composition assistant that leverages natural language processing and machine learning to generate original song lyrics. The system analyzes patterns, themes, and stylistic elements from thousands of web-scraped songs via the Genius API to create contextually relevant and emotionally resonant lyrics that match artists' styles and preferences.",
+              line: "An AI-powered music composition assistant that leverages natural language processing and machine learning to generate original song lyrics.",
+              description: "The system analyzes patterns, themes, and stylistic elements from thousands of web-scraped songs via the Genius API to create contextually relevant and emotionally resonant lyrics that match artists' styles and preferences.",
               techStack: 'Python, AWS, Natural Language Processing, Machine Learning',
               myRole: 'Developer',
               accolades: ['1st Place at Clemson University MLH Hackathon – Creativity Award']
               },
               {
               title: 'Capgen.AI',
-              description: "An innovative social media tool that harnesses Google Cloud Vision AI to automatically generate engaging Instagram captions. The app analyzes uploaded images for objects, scenes, emotions, and activities, then uses advanced natural language processing to craft contextually relevant, trending-style captions that boost engagement. Features include customizable tone settings, hashtag optimization, and multi-image batch processing.",
+              line: "An innovative social media tool that harnesses Google Cloud Vision AI to automatically generate engaging Instagram captions.",
+              description:"The app analyzes uploaded images for objects, scenes, emotions, and activities, then uses advanced natural language processing to craft contextually relevant, trending-style captions that boost engagement. Features include customizable tone settings, hashtag optimization, and multi-image batch processing.",
               techStack: 'Python, AWS, Google Cloud Vision AI, Natural Language Processing',
               myRole: 'Developer',
               accolades: ['3st Place at Univeristy of Florida MLH Hackathon']
