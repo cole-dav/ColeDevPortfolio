@@ -22,82 +22,104 @@ export default class DataService {
         content: {
           resumeLink:
             'https://docs.google.com/document/d/1_p-cuDf27i5g3dFtYcN1cgRSEwmD9yreALwTdZdXzwk/export?format=pdf',
-          workExperience: [
-            {
-              jobTitle: 'Software Engineer I',
-              company: 'BlackRock',
-              location: 'Atlanta, GA',
-              period: 'Aug 2024 – Present',
-              accomplishments: [
-                'Working as a full-stack developer in Angular, building micro front-ends supporting $4 trillion worth of ETFs',
-              ],
-            },
-            {
-              jobTitle: 'Founder',
-              company: 'Pitch',
-              location: 'Atlanta, GA',
-              period: 'Nov 2022 – Present',
-              accomplishments: [
-                'Led full-stack development, integrating databases, optimizing data pipelines, and enhancing UI/UX',
-                'Directed a team of 4 engineers and designers, achieving sprint goals and delivering impactful features on schedule',
-                'Innovated a fantasy league platform utilizing stake management to enhance fan engagement and competitive interaction',
-              ],
-            },
-            {
-              jobTitle: 'Software Engineering Intern',
-              company: 'BlackRock',
-              location: 'Atlanta, GA',
-              period: 'June 2022 – Aug 2022',
-              accomplishments: [
-                'Built a system to represent legal agreements on the Ethereum blockchain using Spring Boot',
-                'Implemented Solidity smart contracts for voting permissions, statuses, and agreement data storage',
-                'Refactored UI APIs to deploy new agreement contract instances on Ethereum',
-              ],
-            },
-            {
-              jobTitle: 'Statim Operator Manager',
-              company: 'Tempus Ex Machina',
-              location: 'Atlanta, GA',
-              period: 'Aug 2021 – Present',
-              accomplishments: [
-                'Facilitated machine learning play-by-play data collection for the NFL and PAC-12 via Statim application',
-                'Contributed to application upgrades during the inaugural season',
-                'Reported bugs and suggested features for quality assurance and UX improvements',
-                'Assisted operators with technical difficulties on game days',
-              ],
-            },
-            {
-              jobTitle: 'Software Engineering Intern',
-              company: 'Carmax',
-              location: 'Remote',
-              period: 'June 2021 – Aug 2021',
-              accomplishments: [
-                'Created a monitoring system for data mart load statuses, reducing troubleshooting time by 1 hour daily',
-                'Built PowerBI reports for data loads with conditional distribution based on load times',
-                'Resolved Adobe click data ingestion issues causing weekly clogs on Databricks',
-              ],
-            },
-            {
-              jobTitle: 'Catering Manager',
-              company: 'Cabakis Catering',
-              location: 'Dacula, GA',
-              period: 'April 2018 – Aug 2020',
-              accomplishments: [
-                'Led a team of servers and staff during events and preparation days',
-                'Ensured successful contract fulfillment with consistent client satisfaction',
-                'Customized services based on client needs for repeat business',
-              ],
-            },
-          ],
           education: [
             {
-              credit: 'B.S. in Computer Science',
-              place: 'Georgia Institute of Technology',
-              gpa: '3.32/4.0 GPA',
-              period: 'Aug 2019 – Dec 2023',
-              accolades: ['Zell Miller Scholar'],
+              institution: 'Georgia Institute of Technology',
+              location: 'Atlanta, GA',
+              degree: 'B.S. in Computer Science',
+              graduationDate: 'Aug. 2019 – Dec. 2023',
+              details: ['GPA: 3.32', 'Zell Miller Scholar'],
             },
           ],
+          workExperience: [
+            {
+              company: 'BlackRock',
+              location: 'Atlanta, GA',
+              jobTitle: 'Rotational Software Engineer',
+              period: 'Aug. 2024 – Present',
+              accomplishments: [
+                'Migrated developer-only config files to our Azure cloud storage; routed sensitive credentials through a Spring Boot API',
+                'Enabled config access for internal tools streamlining onboarding and handoffs between engineering and support teams',
+                'Engineered a reusable filter management system in Angular for complex data grids across a micro-frontend architecture',
+                'Enhanced product creation workflow screens and form error handling resulting in a smoother user experience',
+                'Implemented RXJS solutions, resolving critical bugs, modernizing site styling, and added interactive user notifications',
+              ],
+            },
+            {
+              company: 'Verizon',
+              location: 'Atlanta, GA',
+              jobTitle: 'Sales Associate',
+              period: 'Sept. 2023 – Feb. 2024',
+              accomplishments: [
+                'Consistently exceeded commission-based sales targets through strategic customer engagement and product expertise',
+                'Led my regional training class in sales performance, setting benchmarks for revenue generation and client satisfaction',
+                'Achieved 4 out of 5 key performance indicators during my first full quarter, demonstrating strong market understanding and effective sales strategies.',
+              ],
+            },
+            {
+              company: 'BlackRock',
+              location: 'Atlanta, GA',
+              jobTitle: 'Software Engineer Intern',
+              period: 'June 2022 – Aug. 2022',
+              accomplishments: [
+                'Built system to represent legal agreements on the Ethereum blockchain and interact with them using Spring Boot',
+                'Implemented Solidity smart contract to handle voting permissions, voting statuses, and agreement data storage',
+                'Refactored existing UI APIs to retrieve agreement data and deploy new agreement contract instances on Ethereum',
+              ],
+            },
+            {
+              company: 'Carmax',
+              location: 'Remote',
+              jobTitle: 'Software Engineering Intern',
+              period: 'June 2021 – Aug. 2021',
+              accomplishments: [
+                'Created a monitoring system for data mart load statuses, reducing daily troubleshooting time by 1 hour',
+                'Built reports for data loads in PowerBI and implemented conditional report distribution based on current load times',
+                'Resolved Adobe click data ingestion flaw that resulted in at least 1 major clog a week on databricks',
+              ],
+            },
+          ],
+          entrepreneurship: [
+            {
+              company: 'Pitch',
+              location: 'Atlanta, GA',
+              jobTitle: 'Founder',
+              period: 'Nov. 2022 – Present',
+              accomplishments: [
+                'Launched innovative fantasy league app, leveraging stake management to boost fan engagement and competition',
+                'Owned end-to-end product and engineering strategy — led MVP development, investor demos, and feature roadmap, securing seed funding',
+                'Led production development with React Native and Supabase, optimizing data pipelines and UI/UX for user retention',
+              ],
+            },
+          ],
+          accolades: [
+            {
+              event: 'Clemson University MLH Hackathon',
+              location: 'Clemson, SC',
+              date: 'Jan. 2020',
+              award: '1st Place',
+              details: [
+                'Built SmartStu.Space, an AI-driven songwriting assistant designed to help musicians overcome creative block',
+                'Leveraged Python machine learning algorithms, including Markov chains, to generate original song lyrics',
+                'Automated data collection from Genius and applied NLP and data analytics to drive creative content synthesis',
+              ],
+            },
+          ],
+          skills: {
+            technical: [
+              'Angular',
+              'React Native',
+              'Python',
+              'Azure',
+              'Java',
+              'Spring Boot',
+              'Supabase',
+              'Solidity',
+              'TypeScript',
+              'PostgreSQL',
+              'Tableau',
+            ],
+          },
         },
       },
       {
