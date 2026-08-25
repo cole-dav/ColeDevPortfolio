@@ -206,7 +206,7 @@ export default class DataService {
       {
         id: 'hobbies',
         name: 'Hobbies.txt',
-        icon: 'joy_102',
+        icon: 'drvspace_7',
         content: {
           intro: "What I'm up to outside of tech — photos and videos coming soon.",
           items: [
