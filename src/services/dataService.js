@@ -216,11 +216,22 @@ export default class DataService {
                 { type: 'image', src: '/hobbies/sailing.jpg', caption: 'On the water with the crew' },
               ],
             },
-            { name: 'Golf', detail: '12 Handicap', media: [] },
+            {
+              name: 'Golf',
+              detail: '12 Handicap',
+              media: [
+                { type: 'video', src: '/hobbies/golf.mp4', caption: 'Sinking a putt' },
+              ],
+            },
             { name: 'Kickboxing', media: [] },
             { name: 'Sim Racing + Karting', media: [] },
             { name: "Texas Hold'em", media: [] },
-            { name: 'Ceramics', media: [] },
+            {
+              name: 'Ceramics',
+              media: [
+                { type: 'video', src: '/hobbies/ceramics.mp4', caption: 'Some of my pottery' },
+              ],
+            },
             { name: 'Vinyasa Yoga', media: [] },
           ],
         },

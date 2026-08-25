@@ -39,9 +39,9 @@ const MediaThumb = styled.img`
 `;
 
 const MediaVideo = styled.video`
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
     border: 1px solid #808080;
 `;
 
