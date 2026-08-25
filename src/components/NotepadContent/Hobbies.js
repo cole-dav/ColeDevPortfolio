@@ -12,6 +12,7 @@ const HobbyCard = styled.div`
     border: 1px solid #808080;
     padding: 8px;
     background: #f5f5f5;
+    ${({ $large }) => $large && 'grid-column: 1 / -1;'}
 `;
 
 const HobbyName = styled.p`
@@ -32,16 +33,16 @@ const MediaGrid = styled.div`
 `;
 
 const MediaThumb = styled.img`
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
     border: 1px solid #808080;
 `;
 
 const MediaVideo = styled.video`
     width: 100%;
-    max-width: 220px;
     height: auto;
+    display: block;
     border: 1px solid #808080;
 `;
 
@@ -53,15 +54,14 @@ const EmptyMedia = styled.p`
 `;
 
 function Hobbies({ content }) {
-    const { intro, items } = content;
+    const { items } = content;
     return (
         <div>
             <h2>Hobbies</h2>
-            {intro && <p>{intro}</p>}
             <HobbyGrid>
                 {
                     items.map((item, idx) => (
-                        <HobbyCard key={idx}>
+                        <HobbyCard key={idx} $large={item.large}>
                             <HobbyName>{item.name}</HobbyName>
                             {item.detail && <HobbyDetail>{item.detail}</HobbyDetail>}
                             {
@@ -70,7 +70,14 @@ function Hobbies({ content }) {
                                         {
                                             item.media.map((m, mIdx) => (
                                                 m.type === 'video' ? (
-                                                    <MediaVideo key={mIdx} src={m.src} controls />
+                                                    <MediaVideo
+                                                        key={mIdx}
+                                                        src={m.src}
+                                                        autoPlay
+                                                        loop
+                                                        muted
+                                                        playsInline
+                                                    />
                                                 ) : (
                                                     <MediaThumb key={mIdx} src={m.src} alt={m.caption || item.name} />
                                                 )
@@ -78,7 +85,7 @@ function Hobbies({ content }) {
                                         }
                                     </MediaGrid>
                                 ) : (
-                                    <EmptyMedia>No media yet</EmptyMedia>
+                                    !item.hidePlaceholder && <EmptyMedia>No media yet</EmptyMedia>
                                 )
                             }
                         </HobbyCard>
