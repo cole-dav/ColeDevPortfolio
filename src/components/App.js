@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GlobalStyle, ThemeProvider } from '@react95/core';
 import { createGlobalStyle } from 'styled-components';
 import DataService from '../services/dataService';
 import DataContext from '../contexts/dataContext';
 import Taskbar from './Taskbar';
 import Desktop from './Desktop';
+import CrtEffect from './CrtEffect';
 
 const dataService = new DataService();
 
@@ -14,15 +15,22 @@ const BodyFontSizeOverride = createGlobalStyle`
   }
 `;
 
-const App = () => (
-  <DataContext.Provider value={dataService}>
-    <ThemeProvider>
-      <GlobalStyle />
-      <BodyFontSizeOverride />
+const App = () => {
+  const [crtEnabled, setCrtEnabled] = useState(true);
+  const toggleCrt = () => setCrtEnabled((enabled) => !enabled);
 
-      <Desktop />
-      <Taskbar />
-    </ThemeProvider>
-  </DataContext.Provider>
-);
+  return (
+    <DataContext.Provider value={dataService}>
+      <ThemeProvider>
+        <GlobalStyle />
+        <BodyFontSizeOverride />
+
+        <Desktop />
+        <Taskbar crtEnabled={crtEnabled} toggleCrt={toggleCrt} />
+        <CrtEffect enabled={crtEnabled} />
+      </ThemeProvider>
+    </DataContext.Provider>
+  );
+};
+
 export default App;
