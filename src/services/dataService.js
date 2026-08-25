@@ -210,7 +210,12 @@ export default class DataService {
         content: {
           intro: "What I'm up to outside of tech — photos and videos coming soon.",
           items: [
-            { name: 'Sailing', media: [] },
+            {
+              name: 'Sailing',
+              media: [
+                { type: 'image', src: '/hobbies/sailing.jpg', caption: 'On the water with the crew' },
+              ],
+            },
             { name: 'Golf', detail: '12 Handicap', media: [] },
             { name: 'Kickboxing', media: [] },
             { name: 'Sim Racing + Karting', media: [] },
