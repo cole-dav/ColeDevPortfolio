@@ -9,9 +9,9 @@ export default class DataService {
         icon: 'info_bubble',
         content: {
           paragraphs: [
-            "I am a software engineer with a passion for entrepreneurship and innovative problem-solving.",
-            "As the founder of a pioneering sports app, I have led cross-functional teams to deliver impactful features and drive user engagement.",
-            "With a background in computer science from Georgia Tech, I have experience in full-stack development, blockchain technologies, and product management.",
+            "I'm a Rotational Software Engineer at BlackRock, where I build AI-powered internal tooling and work across platform infrastructure and product engineering for one of the world's largest asset managers.",
+            "I'm also the founder of Pitch, a sports prediction market app — I've led a team of 3 engineers from MVP to 150+ users and raised $150k in seed funding.",
+            "I studied Computer Science at Georgia Tech with a concentration in Artificial Intelligence and Human-Computer Interaction, and I have a soft spot for entrepreneurship and hands-on problem-solving, in code and outside of it (see Hobbies.txt).",
           ],
         },
       },
@@ -26,9 +26,9 @@ export default class DataService {
             {
               institution: 'Georgia Institute of Technology',
               location: 'Atlanta, GA',
-              degree: 'B.S. in Computer Science',
+              degree: 'B.S. in Computer Science, Concentration in Artificial Intelligence and Human-Computer Interaction',
               graduationDate: 'Aug. 2019 – Dec. 2023',
-              details: ['GPA: 3.32', 'Zell Miller Scholar'],
+              details: ['GPA: 3.32', 'Zell Miller Scholar', 'OMED Challenge Scholar'],
             },
           ],
           workExperience: [
@@ -37,23 +37,28 @@ export default class DataService {
               location: 'Atlanta, GA',
               jobTitle: 'Rotational Software Engineer',
               period: 'Aug. 2024 – Present',
-              accomplishments: [
-                'Migrated developer-only config files to our Azure cloud storage; routed sensitive credentials through a Spring Boot API',
-                'Enabled config access for internal tools streamlining onboarding and handoffs between engineering and support teams',
-                'Engineered a reusable filter management system in Angular for complex data grids across a micro-frontend architecture',
-                'Enhanced product creation workflow screens and form error handling resulting in a smoother user experience',
-                'Implemented RXJS solutions, resolving critical bugs, modernizing site styling, and added interactive user notifications',
-              ],
-            },
-            {
-              company: 'Verizon',
-              location: 'Atlanta, GA',
-              jobTitle: 'Sales Associate',
-              period: 'Sept. 2023 – Feb. 2024',
-              accomplishments: [
-                'Consistently exceeded commission-based sales targets through strategic customer engagement and product expertise',
-                'Led my regional training class in sales performance, setting benchmarks for revenue generation and client satisfaction',
-                'Achieved 4 out of 5 key performance indicators during my first full quarter, demonstrating strong market understanding and effective sales strategies.',
+              categories: [
+                {
+                  name: 'AI & Internal Tooling',
+                  accomplishments: [
+                    "Built a meeting-intelligence workflow inside BlackRock's AI agent that ingests transcripts, grounds them against the codebase and open tickets, automates follow-up tickets, and generates role-specific summaries tailored to SWE, Product, and QA stakeholders",
+                    'Automated Spark observability reporting by transforming raw Cloudera telemetry into a prioritized, filterable report surfacing the worst-performing and most-frequently-failing jobs — now the standing input to weekly engineering triage',
+                  ],
+                },
+                {
+                  name: 'Platform & Infrastructure',
+                  accomplishments: [
+                    'Led a cloud migration and Hadoop workload optimization effort that eliminated $500K in infrastructure spend in 6 months, using Python automation and Cloudera Observability benchmarking to identify and re-tune expensive jobs',
+                    'Ran weekly Spark performance reviews with 8 application teams, diagnosing inefficient job configurations and resource misallocation across a 16-node cluster and driving remediation with each owning team',
+                  ],
+                },
+                {
+                  name: 'Product Engineering',
+                  accomplishments: [
+                    'Embedded with the Private Markets team to replace a manual SSH-and-document-upload onboarding process: ran discovery with the ops users, shipped a React + Spring Boot tool on Azure with a cloud-backed API, and migrated 150 dependent nightly jobs onto the new system with no interruption to production — cutting onboarding turnaround by 6 hrs per client',
+                    'Shipped features into Aladdin Wealth (React) used by 30+ clients: new securities views, tables, and stability fixes prioritized from direct client-service team feedback',
+                  ],
+                },
               ],
             },
             {
@@ -62,20 +67,28 @@ export default class DataService {
               jobTitle: 'Software Engineer Intern',
               period: 'June 2022 – Aug. 2022',
               accomplishments: [
-                'Built system to represent legal agreements on the Ethereum blockchain and interact with them using Spring Boot',
-                'Implemented Solidity smart contract to handle voting permissions, voting statuses, and agreement data storage',
-                'Refactored existing UI APIs to retrieve agreement data and deploy new agreement contract instances on Ethereum',
+                'Built a system to represent legal agreements on the Ethereum blockchain using Spring Boot and Solidity contracts',
+                'Refactored existing UI APIs to retrieve agreement data and deploy new contract instances on Ethereum',
+              ],
+            },
+            {
+              company: 'Tempus Ex Machina',
+              location: 'Atlanta, GA',
+              jobTitle: 'Product Manager',
+              period: 'Aug. 2021 – Feb. 2023',
+              accomplishments: [
+                'Facilitated season-long machine learning play-by-play data collection for the NFL and PAC-12 via the Statim application',
+                'Contributed to the implementation of upgrades and modifications to the application during the inaugural season',
               ],
             },
             {
               company: 'Carmax',
               location: 'Remote',
-              jobTitle: 'Software Engineering Intern',
+              jobTitle: 'Software Engineer Intern',
               period: 'June 2021 – Aug. 2021',
               accomplishments: [
-                'Created a monitoring system for data mart load statuses, reducing daily troubleshooting time by 1 hour',
-                'Built reports for data loads in PowerBI and implemented conditional report distribution based on current load times',
-                'Resolved Adobe click data ingestion flaw that resulted in at least 1 major clog a week on databricks',
+                'Built a monitoring system for data mart load statuses that cut daily troubleshooting by an hour, visualized with PowerBI and shared via conditional distribution that routed alerts based on live load times',
+                'Diagnosed and fixed a flaw in Adobe clickstream ingestion that was clogging Databricks pipelines at least once a week, eliminating a recurring source of data-team firefighting',
               ],
             },
           ],
@@ -84,11 +97,11 @@ export default class DataService {
               company: 'Pitch',
               location: 'Atlanta, GA',
               jobTitle: 'Founder',
-              period: 'Nov. 2022 – Present',
+              period: 'Nov. 2022 – June 2025',
               accomplishments: [
-                'Launched innovative fantasy league app, leveraging stake management to boost fan engagement and competition',
-                'Owned end-to-end product and engineering strategy — led MVP development, investor demos, and feature roadmap, securing seed funding',
-                'Led production development with React Native and Supabase, optimizing data pipelines and UI/UX for user retention',
+                'Built and launched a sports prediction market (React Native, Supabase) to 150+ users, with a stake-management system',
+                'Led a team of 3 engineers; architected live sports data pipelines and iterated UI/UX against retention data',
+                'Raised $150k in seed funding — ran investor demos, conducted user interviews, and shipped directly against customer feedback',
               ],
             },
           ],
@@ -106,19 +119,9 @@ export default class DataService {
             },
           ],
           skills: {
-            technical: [
-              'Angular',
-              'React Native',
-              'Python',
-              'Azure',
-              'Java',
-              'Spring Boot',
-              'Supabase',
-              'Solidity',
-              'TypeScript',
-              'PostgreSQL',
-              'Tableau',
-            ],
+            aiAgents: ['LLM application development', 'Agent orchestration', 'RAG', 'Evals', 'MCP'],
+            languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'Solidity', 'SQL'],
+            frameworks: ['React Native', 'Angular', 'Azure', 'Databricks', 'Hadoop', 'Spring Boot', 'Supabase'],
           },
         },
       },
@@ -130,8 +133,9 @@ export default class DataService {
           projects: [
             {
               title: 'Pitch',
+              line: 'A sports prediction market app that grew to 150+ users and raised $150k in seed funding.',
               description:
-                'An innovative fantasy sports platform utilizing stake management to enhance fan engagement and competitive interaction.',
+                'A stake-management system built for fan engagement and competitive interaction, backed by live sports data pipelines. Led a team of 3 engineers from MVP through investor demos and production launch, iterating UI/UX against retention data.',
               techStack: 'React Native, Supabase',
               myRole: 'Founder',
             },
@@ -160,17 +164,18 @@ export default class DataService {
         icon: 'progman_11',
         content: {
           hard: [
-            { name: 'Java', progress: 90 },
             { name: 'Python', progress: 90 },
+            { name: 'TypeScript / JavaScript', progress: 85 },
             { name: 'React Native', progress: 85 },
             { name: 'Angular', progress: 85 },
-            { name: 'Solidity', progress: 75 },
+            { name: 'Java', progress: 80 },
+            { name: 'SQL', progress: 80 },
             { name: 'Spring Boot', progress: 75 },
             { name: 'Azure', progress: 75 },
-            { name: 'Postgres', progress: 70 },
-            { name: 'Databricks', progress: 70 },
-            { name: 'Tableau', progress: 70 },
-            { name: 'MATLAB', progress: 70 },
+            { name: 'Databricks', progress: 75 },
+            { name: 'LLM / Agent Development (RAG, MCP, Evals)', progress: 75 },
+            { name: 'Hadoop', progress: 70 },
+            { name: 'Solidity', progress: 70 },
           ],
           certificates: [
             'Google Data Analytics',
@@ -180,22 +185,39 @@ export default class DataService {
           ],
           roles: {
             'Product Manager (PM)': [
-              'Oversaw strategy, roadmap, and execution of a sports app, balancing user needs with business goals',
-              'Collaborated cross-functionally to align product vision with engineering execution',
-              'Conducted market analysis and user research to inform product decisions',
+              'Owned end-to-end product and engineering strategy for Pitch, a sports prediction market, from MVP through 150+ users',
+              'Ran investor demos and user interviews that helped secure $150k in seed funding',
+              'Balanced user needs with business goals across the product roadmap',
             ],
             'Business Analyst (BA)': [
-              'Led analytics and performance tracking for a sports app, translating data insights into actionable strategies',
-              'Managed financial modeling and investment analysis, aiding in raising significant funding',
+              'Led analytics and performance tracking for Pitch, translating data insights into actionable strategies',
+              'Supported financial modeling and investment analysis during the seed fundraise',
               'Developed and monitored KPIs to evaluate product success',
             ],
             'Software Engineer (SWE)': [
-              'Architected and developed system infrastructure for a sports app',
-              'Collaborated with an international team to implement agile development practices',
-              'Implemented automation tools and monitoring systems to enhance performance',
+              'Led a team of 3 engineers building Pitch in React Native and Supabase',
+              'Architected live sports data pipelines and iterated UI/UX against retention data',
+              'At BlackRock, built AI agent workflows, Spark observability tooling, and client-facing product features',
             ],
           },
           soft: 'Analytical Thinking, Entrepreneurship, Creative Problem Solving, Leadership, Teamwork',
+        },
+      },
+      {
+        id: 'hobbies',
+        name: 'Hobbies.txt',
+        icon: 'joy_102',
+        content: {
+          intro: "What I'm up to outside of tech — photos and videos coming soon.",
+          items: [
+            { name: 'Sailing', media: [] },
+            { name: 'Golf', detail: '12 Handicap', media: [] },
+            { name: 'Kickboxing', media: [] },
+            { name: 'Sim Racing + Karting', media: [] },
+            { name: "Texas Hold'em", media: [] },
+            { name: 'Ceramics', media: [] },
+            { name: 'Vinyasa Yoga', media: [] },
+          ],
         },
       },
       {
@@ -205,7 +227,7 @@ export default class DataService {
         content: {
           emailText:
             'If you want to hire me or collaborate on a project, just email me at ',
-          email: 'dc@gatech.edu',
+          email: 'cdavis339@gatech.edu',
           socialText: 'Or you can reach me through social media:',
           social: [
             {

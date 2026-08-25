@@ -53,11 +53,24 @@ function Resume({ content }) {
             <b>{exp.company}</b> – {exp.location}
           </p>
           <p>{exp.jobTitle} {exp.period}</p>
-          <StyledUl>
-            {exp.accomplishments.map((a, accomplishmentIdx) => (
-              <StyledLi key={accomplishmentIdx}>{a}</StyledLi>
-            ))}
-          </StyledUl>
+          {exp.categories ? (
+            exp.categories.map((cat, catIdx) => (
+              <div key={catIdx}>
+                <SubSectionTitle>{cat.name}</SubSectionTitle>
+                <StyledUl>
+                  {cat.accomplishments.map((a, accomplishmentIdx) => (
+                    <StyledLi key={accomplishmentIdx}>{a}</StyledLi>
+                  ))}
+                </StyledUl>
+              </div>
+            ))
+          ) : (
+            <StyledUl>
+              {exp.accomplishments.map((a, accomplishmentIdx) => (
+                <StyledLi key={accomplishmentIdx}>{a}</StyledLi>
+              ))}
+            </StyledUl>
+          )}
           <br />
         </div>
       ))}
@@ -102,11 +115,27 @@ function Resume({ content }) {
         </>
       )}
 
-      {skills && skills.technical && (
+      {skills && (
         <>
           <SectionTitle>SKILLS</SectionTitle>
-          <SubSectionTitle>Technical</SubSectionTitle>
-          <p>{skills.technical.join(', ')}</p>
+          {skills.aiAgents && (
+            <>
+              <SubSectionTitle>AI & Agents</SubSectionTitle>
+              <p>{skills.aiAgents.join(', ')}</p>
+            </>
+          )}
+          {skills.languages && (
+            <>
+              <SubSectionTitle>Languages</SubSectionTitle>
+              <p>{skills.languages.join(', ')}</p>
+            </>
+          )}
+          {skills.frameworks && (
+            <>
+              <SubSectionTitle>Frameworks, Platforms & Tools</SubSectionTitle>
+              <p>{skills.frameworks.join(', ')}</p>
+            </>
+          )}
         </>
       )}
       <StyledLink href={content.resumeLink} download>

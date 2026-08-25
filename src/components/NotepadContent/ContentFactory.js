@@ -5,6 +5,7 @@ import Resume from './Resume'
 import Skills from './Skills'
 import Contact from './Contact'
 import Projects from './Projects'
+import Hobbies from './Hobbies'
 
 function ContentFactory({ id, isMobile }) {
     const data = useContext(DataContext);
@@ -30,6 +31,8 @@ function ContentFactory({ id, isMobile }) {
             return <Contact content={item.content} />
         case 'projects':
             return <Projects content={item.content} />
+        case 'hobbies':
+            return <Hobbies content={item.content} />
         default:
             return (<div></div>);
     }
