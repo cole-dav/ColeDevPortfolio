@@ -208,10 +208,10 @@ export default class DataService {
         name: 'Hobbies.txt',
         icon: 'drvspace_7',
         content: {
-          intro: "What I'm up to outside of tech — photos and videos coming soon.",
           items: [
             {
               name: 'Sailing',
+              large: true,
               media: [
                 { type: 'image', src: '/hobbies/sailing.jpg', caption: 'On the water with the crew' },
               ],
@@ -223,16 +223,16 @@ export default class DataService {
                 { type: 'video', src: '/hobbies/golf.mp4', caption: 'Sinking a putt' },
               ],
             },
-            { name: 'Kickboxing', media: [] },
-            { name: 'Sim Racing + Karting', media: [] },
-            { name: "Texas Hold'em", media: [] },
             {
               name: 'Ceramics',
               media: [
                 { type: 'video', src: '/hobbies/ceramics.mp4', caption: 'Some of my pottery' },
               ],
             },
-            { name: 'Vinyasa Yoga', media: [] },
+            { name: 'Kickboxing', media: [] },
+            { name: 'Sim Racing + Karting', media: [], hidePlaceholder: true },
+            { name: "Texas Hold'em", media: [], hidePlaceholder: true },
+            { name: 'Vinyasa Yoga', media: [], hidePlaceholder: true },
           ],
         },
       },
