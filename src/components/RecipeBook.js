@@ -1,6 +1,7 @@
 import React from 'react'
 import { Modal, Frame } from '@react95/core'
 import RecipeFlowchart from './RecipeFlowchart'
+import RecipeCard from './RecipeCard'
 
 function RecipeBook({ recipes, closeRecipeBook, isMobile }) {
     return (
@@ -29,7 +30,11 @@ function RecipeBook({ recipes, closeRecipeBook, isMobile }) {
             >
                 {
                     recipes.map((recipe) => (
-                        <RecipeFlowchart key={recipe.id} recipe={recipe} />
+                        recipe.type === 'card' ? (
+                            <RecipeCard key={recipe.id} recipe={recipe} />
+                        ) : (
+                            <RecipeFlowchart key={recipe.id} recipe={recipe} />
+                        )
                     ))
                 }
             </Frame>
