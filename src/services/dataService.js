@@ -262,6 +262,31 @@ export default class DataService {
         },
       },
     ],
+    recipes: [
+      {
+        id: 'brownies',
+        title: 'Brownies',
+        prep: ['Butter and flour an 8x8-in pan', 'Preheat oven to 350°F (170°C)'],
+        rows: [
+          '4 oz (115 g) unsalted butter',
+          '1 cup (200 g) sugar',
+          '1/4 tsp (2.5 mL) vanilla extract',
+          '1 shot (4 Tbs; 60 mL) fresh brewed espresso or very strong coffee',
+          '2 large (100 g) eggs',
+          '1/2 cup (80 g) all-purpose flour',
+          "1/3 cup (80 g) Hershey's cocoa powder",
+          '1/4 tsp (1.3 g) baking soda',
+          '1/4 tsp (1.5 g) table salt',
+        ],
+        columns: [
+          { label: 'melt', groups: [[0, 1]] },
+          { label: 'mix', groups: [[1, 3]] },
+          { label: 'mix', groups: [[0, 5]] },
+          { label: 'fold in', groups: [[0, 9]] },
+        ],
+        result: 'bake\n350°F (170°C)\n30 to 40 min',
+      },
+    ],
   };
 
   getItems() {
@@ -277,5 +302,9 @@ export default class DataService {
       projectRepo: this._data.projectRepo,
       react95Repo: this._data.react95Repo,
     };
+  }
+
+  getRecipes() {
+    return this._data.recipes;
   }
 }

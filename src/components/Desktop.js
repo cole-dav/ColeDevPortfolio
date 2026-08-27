@@ -2,9 +2,10 @@ import React, { useState, useContext, useEffect } from 'react'
 import Explorer from './Explorer'
 // import Jackpot from './Jackpot'
 import Notepad from './Notepad';
+import RecipeBook from './RecipeBook';
 import DataContext from '../contexts/dataContext'
 import Shortcuts from './Shortcuts';
-import Player from './Player'; 
+import Player from './Player';
 // import Chatroom from './Chatroom';
 
 function Desktop() {
@@ -18,6 +19,7 @@ function Desktop() {
     // const [chatroomOpened, toggleChatroom] = useState(false);
     // const [selectedAction, setSelectedAction] = useState(null);
     const [notepadOpened, toggleNotepad] = useState(false);
+    const [recipeBookOpened, toggleRecipeBook] = useState(false);
     const [items, setItems] = useState([]);
 
     useEffect(
@@ -67,10 +69,18 @@ function Desktop() {
         toggleNotepad(true);
     };
 
+    const closeRecipeBook = () => {
+        toggleRecipeBook(false);
+    };
+
+    const openRecipeBook = () => {
+        toggleRecipeBook(true);
+    };
+
     return (
         <React.Fragment>
-            <Shortcuts openExplorer={openExlorer } />
-            
+            <Shortcuts openExplorer={openExlorer} openRecipeBook={openRecipeBook} />
+
             {
                 explorerOpened && (
                     <Explorer items={items} closeExplorer={closeExplorer} openNotepad={openNotepad} isMobile={isMobile} />
@@ -79,6 +89,11 @@ function Desktop() {
             {
                 notepadOpened && (
                     <Notepad closeNotepad={closeNotepad} selectedItem={selectedItem} isMobile={isMobile} />
+                )
+            }
+            {
+                recipeBookOpened && (
+                    <RecipeBook recipes={data.getRecipes()} closeRecipeBook={closeRecipeBook} isMobile={isMobile} />
                 )
             }
             {/* { 

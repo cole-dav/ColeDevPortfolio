@@ -10,7 +10,7 @@ const StyledShorcut = styled.div`
 	align-items: center;
 `;
 
-function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
+function Shortcuts({ openExplorer, openJackpot, openChatroom, openRecipeBook }) {
     return (
         <div>
             <StyledShorcut>
@@ -44,6 +44,14 @@ function Shortcuts({ openExplorer, openJackpot, openChatroom }) {
                     onClick={()=>startWebamp()}
                 />
                 <div>Media</div>
+            </StyledShorcut>
+            <StyledShorcut>
+                <Icon
+                    className="pointer"
+                    name="help_book"
+                    onClick={() => openRecipeBook()}
+                />
+                <div>Recipes</div>
             </StyledShorcut>
         </div>
     )
