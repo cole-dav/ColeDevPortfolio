@@ -38,6 +38,12 @@ const IngredientLink = styled.a`
     font-size: 0.85em;
 `;
 
+const Note = styled.p`
+    margin: 10px 0 0;
+    font-style: italic;
+    color: #444;
+`;
+
 function Ingredient({ item }) {
     if (typeof item === 'string') {
         return <StyledLi>{item}</StyledLi>;
@@ -55,7 +61,7 @@ function Ingredient({ item }) {
 }
 
 function RecipeCard({ recipe }) {
-    const { title, ingredients, steps } = recipe;
+    const { title, ingredients, steps, note } = recipe;
     return (
         <Wrapper>
             <Title>{title}</Title>
@@ -75,6 +81,7 @@ function RecipeCard({ recipe }) {
                     </StepList>
                 </>
             )}
+            {note && <Note>{note}</Note>}
         </Wrapper>
     )
 }
