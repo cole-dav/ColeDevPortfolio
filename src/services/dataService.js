@@ -323,7 +323,7 @@ export default class DataService {
           '1 tbls sugar',
           'One minced fresh garlic clove',
           '2 cups milk',
-          '1 8 oz package Colby/Monterey Jack cheese',
+          '1 (8 oz) package Colby/Monterey Jack cheese',
           '4 cups shredded cheddar cheese',
         ],
         steps: [
