@@ -303,8 +303,8 @@ export default class DataService {
           '1/4 tsp hot cayenne pepper',
         ],
         steps: [
-          'Rub the ribs with the spice mix, wrap in foil, and cook at 275°F for 2 hours.',
-          'Add butter, coke, and sugar to the foil and reseal.',
+          'Rub the ribs with the spice mix and cook open-air on a rack at 275°F for 2 hours.',
+          'Wrap in foil with butter, coke, and sugar, and seal.',
           'Cook at 350°F for 1 hour.',
           'Remove the ribs from the foil.',
           'Coat in sauce and broil until charred.',
