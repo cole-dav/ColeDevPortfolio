@@ -394,7 +394,7 @@ export default class DataService {
           'At 8-9 min, press the softened noodles down into the liquid and re-cover. Simmer 15-20 min total, adding a splash of warm stock if it gets dry.',
           'Off heat, stir in the lemon juice and Parmesan until glossy. Serve right away.',
         ],
-        note: 'Sauce should look a little loose at the end; it thickens as it sits. Good with chicken, shrimp, or Italian sausage. Source: Bad Batch Baking.',
+        note: 'Sauce should look a little loose at the end; it thickens as it sits. Good with chicken, shrimp, or Italian sausage.',
       },
     ],
   };
